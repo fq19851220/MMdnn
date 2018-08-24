@@ -934,7 +934,7 @@ class TestModels(CorrectnessTest):
             if macos_version() < (10, 13):
                 return False
 
-        if target_framework == 'Onnx':
+        if target_framework == 'Onnx' or target_framework == 'Caffe':
             if converted_prediction is None:
                 return False
 
